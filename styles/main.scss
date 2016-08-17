@@ -1,0 +1,84 @@
+$roboto-font-path: "~materialize-css/fonts/roboto/";
+
+@import "~materialize-css/sass/materialize.scss";
+
+.app {
+    @extend .row;
+}
+
+.browser-slot {
+    @extend .col;
+    @extend .s12;
+    @extend .m6;
+    @extend .l8;
+}
+
+.playlist-slot {
+    @extend .col;
+    @extend .s12;
+    @extend .m6;
+    @extend .l4;
+}
+
+.player-slot {
+    @extend .col;
+    @extend .s12;
+    @extend .m12;
+    @extend .l12;
+}
+
+.player {
+    @extend .card;
+
+    height: 200px;
+}
+
+.browser {
+    @extend .card;
+
+    .body {
+        @extend .collection;
+        height: 400px;
+        overflow: auto;
+    }
+}
+
+.browser-item {
+    @extend .collection-item;
+}
+
+.playlist {
+    @extend .card;
+
+    .body {
+        @extend .collection;
+        height: 465px;
+        overflow: auto;
+    }
+}
+
+.playlist-item {
+    @extend .collection-item;
+
+    .play {
+        @extend .btn-flat;
+        @extend .right;
+    }
+
+    .active {
+        @extend .active;
+    }
+
+    .play-active {
+        @extend .grey-text;
+        @extend .text-lighten-5;
+    }
+}
+
+.time {
+    @extend .center-align;
+}
+
+button {
+    @extend .btn;
+}
